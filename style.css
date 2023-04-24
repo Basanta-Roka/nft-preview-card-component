@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 1.2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    width: 290px;
+    height: 480px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+hr {
+    opacity: 0.5;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.pic-section {
+    width: 100%;
+    cursor: pointer;
+}
+
+.pic-section #equilibrium-image {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.container .pic-section .view {
+    width: 100%;
+    transform: translateY(-257px);
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.342);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    display: none;
+}
+
+.container .pic-section:hover .view {
+    display: flex;
+}
+
+.container .pic-section #view {
+    position: absolute;
+    width: 50px;
+}
+
+/* .pic-section img:hover {
+    /* image-color: hsl(178, 100%, 50%); */
+/* #soft-blue.v 
+} */
+
+.container .body .top-section h1 {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    margin-top: 0.85rem;
+    width: 165px;
+}
+
+.container .body .top-section h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#soft-blue {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+
+.container .body .top-section p {
+    margin-bottom: 0.85rem;
+    line-height: 22px;
+}
+
+.time-crypto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+}
+
+.time-crypto img {
+    margin-right: 0.35rem;
+}
+
+.time-crypto .crypto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.crypto p {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.creation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.85rem;
+}
+
+.container .body .creation img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #ffff;
+}
+
+.creation .creation-text {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.8rem;
+    font-size: 0.85rem;
+}
+
+.creation .creation-text #creater {
+    margin-left: 0.5rem;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+
+.creation .creation-text #creater:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+.attribution {
+    text-align: center;
+    color: #ffff;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.attribution a {
+    text-decoration: none;
+    margin: 0 0.2rem;
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width:400px) {
+    .attribution {
+        max-width: 280px;
+    }
+}
